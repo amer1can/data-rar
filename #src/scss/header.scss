@@ -1,0 +1,83 @@
+// ===гамбургер ===
+// .icon-menu {
+//   position: absolute;
+//   width: 23px;
+//   height: 22px;
+//   top: 17px;
+//   right: 20px;
+//   background-color: #fff;
+//   border: none;
+//   z-index: 10;
+// }
+
+// .icon-menu span {
+//   transition: all 0.3s ease 0s;
+//   top: 9px;
+//   left: 0px;
+//   position: absolute;
+//   width: 100%;
+//   height: 4px;
+//   background-color: #81B3D2;
+// }
+
+// .icon-menu span:first-child {
+//   top: 0px;
+// }
+
+// .icon-menu span:last-child {
+//   top: auto;
+//   bottom: 0px;
+// }
+
+// .icon-menu:focus {
+//   outline: none;
+// }
+
+// .icon-menu.active span {
+//   -webkit-transform: scale(0);
+//   transform: scale(0);
+// }
+
+// .icon-menu.active span:first-child {
+//   -webkit-transform: rotate(-45deg);
+//   transform: rotate(-45deg);
+//   top: 9px;
+// }
+
+// .icon-menu.active span:last-child {
+//   -webkit-transform: rotate(45deg);
+//   transform: rotate(45deg);
+//   bottom: 9px;
+// }
+.header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  flex-basis: 45%;
+  span {
+    margin-left: 16px;
+    color: #C81F56;
+  }
+}
+.header-menu {
+  display: flex;
+}
+.header-link {
+  height: 25px;
+  border-bottom: 1px solid #F0F0F0;
+  margin-left: 30px;
+  a {
+    font-weight: 500;
+    font-size: 15px;
+    color: #020202;
+    transition: all 0.2s ease;
+  }
+  a:hover {
+    color: #C81F56;
+  }
+}
+.header-link:hover {
+  border-bottom: 1px solid #C81F56;
+}

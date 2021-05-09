@@ -1,0 +1,95 @@
+//<Подключаем шрифты>=============================================
+/* <ПРИМЕР>
+@font-face {
+   font-family: 'UniversCE';
+   src: url('../fonts/Univers CE 45 Light.eot');
+   src: local('☺'), url('../fonts/Univers CE 45 Light.woff') format('woff'), url('../fonts/Univers CE 45 Light.ttf') format('truetype'), url('../fonts/Univers CE 45 Light.svg') format('svg');
+   font-weight: 300;
+   font-style: normal;
+}
+*/
+//VScode -> Ctrl+Shift+P -> Google Fonts -> @import
+// @import url(https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,700,700italic);
+//</Подключаем шрифты>================
+
+//<Шрифт по умолчанию>============================================
+// $fontfamily: "Open Sans";
+//</Шрифт по умолчанию>===========================================
+
+//<ПЕРЕМЕННЫЕ>====================================================
+// $minwidth: 320px;
+// $mw: 1200 + 80; //60 - padding with two sides
+// $tablet: 768; // tablet
+// $mobile: 767;
+  $desktop: 1400px;
+  // $tablet: 1199px;
+  $mobile: 767px;
+//</ПЕРЕМЕННЫЕ>===================================================
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>====================================
+@import "null.scss";
+body {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  margin: 0px auto;
+
+  // вешаем при клике на гамбургер, чтобы фон не листался
+  &.fixed {
+    overflow: hidden; 
+    position: fixed;  
+    width: 100%;
+  }
+}
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===================================
+
+//<ОБОЛОЧКА>======================================================
+.wrapper {
+	width: 1400px;
+	margin: 0 auto;
+}
+
+//</ОБОЛОЧКА>=====================================================
+
+//<ОСНОВНАЯ СЕТКА>================================================
+.container {
+	width: 100%;
+	margin: 0 auto;
+  padding: 0px 115px 0px 140px;
+  
+	// @media (max-width: $tablet) {
+	// 	max-width: 100%;
+	// 	padding: 0px;
+  // }
+  @media (max-width: $mobile) {
+		max-width: 100%;
+		padding: 0px 15px;
+  }
+}
+.container-small {
+  width: 950px;
+  margin: 0px auto;
+}
+.container-slider {
+  width: 100%;
+  padding: 0px 20px;
+  background-image: url('../img/block-03-slider/bg.png');
+  background-position: center right;
+  background-repeat: no-repeat;
+  height: 570px;
+
+}
+//</ОСНОВНАЯ СЕТКА>===============================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>=================
+@import "header.scss";
+@import "common.scss";  //общие стили
+@import "content.scss"; //блоки
+@import "footer.scss";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>================
+
+//<ОСНОВНОЙ БЛОК>=================================================
+
+
+//</ОСНОВНОЙ БЛОК>================================================

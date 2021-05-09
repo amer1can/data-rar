@@ -1,0 +1,42 @@
+block config
+  include _config
+
+doctype html
+html(lang=lang)
+  head
+    block metatags
+      meta(charset="utf-8")
+      meta(name="description" content=desc)
+      meta(name="viewport", content="width=device-width, initial-scale=1.0")
+      meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+      
+    block links
+      if slider
+        link(rel="stylesheet", href=csspath+"/swiper-bundle.css")
+      if bootstrap
+        link(rel="stylesheet", href=csspath+"/bootstrap.css")
+      if gfonts
+        link(rel="preconnect" href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family="+gfonts+"&display=swap" rel="stylesheet")
+      link(rel="stylesheet", href=csspath+"/style.min.css")
+
+    title #{title}
+  body
+    .wrapper
+      block header
+        include _header
+
+      block content
+        include _content
+
+      block footer   
+        include _footer
+
+    block scripts
+  if slider
+    script(src=jspath+"/swiper-bundle.js")
+  if bootstrap
+    script(src=jspath+"/bootstrap.bundle.js")
+  if fawesome
+    script(src="https://kit.fontawesome.com/5734143748.js" crossorigin="anonymous")
+  script(src=jspath+"/main.min.js")

@@ -1,0 +1,12 @@
+//- append/prepend - добавить в конец/начало блока
+//- prepend scripts
+extends ./includes/_template.pug
+
+//- block title 
+//-   | Главная страница
+
+//- назначаем переменные для данной страницы
+append config
+  - title = 'Title'
+  - desc = 'Description'
+  - currentURL = 'index.html'

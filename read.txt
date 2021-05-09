@@ -1,0 +1,10 @@
+Взято с канала 
+от 0 до 1 
+"Gulp сборка с нуля, современный синтаксис, полное руководство" 2020год
+
+начало:
+
+1) git init
+2) npm install (.gitignore -> node_modules)
+3) npm install --save-dev gulp-babel @babel/core @babel/preset-env
+4) gulp
