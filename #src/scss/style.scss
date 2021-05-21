@@ -46,7 +46,7 @@ body {
 
 //<ОБОЛОЧКА>======================================================
 .wrapper {
-	width: 1400px;
+	max-width: 1400px;
 	margin: 0 auto;
 }
 
@@ -68,7 +68,7 @@ body {
   }
 }
 .container-small {
-  width: 950px;
+  max-width: 950px;
   margin: 0px auto;
 }
 .container-slider {
@@ -78,8 +78,33 @@ body {
   background-position: center right;
   background-repeat: no-repeat;
   height: 570px;
-
 }
+.container-big {
+  margin-top: -200px;
+  width: 100%;
+  height: 2410px;
+  background-image: url('../img/block-05/bg.png');
+  background-position: center;
+}
+.container-kurs {
+  width: 100%;
+  height: 1750px;
+  background-image: url('../img/block-07/bg.png');
+  background-position: center;
+  background-repeat: no-repeat
+}
+.container-about {
+  width: 100%;
+  height: 830px;
+  background-image: url('../img/block-08/bg.png');
+  background-position: center;
+  background-repeat: no-repeat
+}
+.container-forma {
+  width: 100%;
+}
+
+
 //</ОСНОВНАЯ СЕТКА>===============================================
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>=================
