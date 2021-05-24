@@ -11,6 +11,8 @@ html(lang=lang)
       meta(http-equiv="X-UA-Compatible", content="IE=Edge")
       
     block links
+      if slick
+        link(rel="stylesheet", href=csspath+"/slick.css")
       if slider
         link(rel="stylesheet", href=csspath+"/swiper-bundle.css")
       if bootstrap
@@ -33,6 +35,10 @@ html(lang=lang)
         include _footer
 
     block scripts
+  if jquery
+    script(src=jspath+"/jquery-3.6.0.min.js")
+  if slick
+    script(src=jspath+"/slick.js")
   if slider
     script(src=jspath+"/swiper-bundle.js")
   if bootstrap

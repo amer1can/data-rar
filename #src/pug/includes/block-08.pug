@@ -3,7 +3,7 @@
     .block-08-title О компании
     .block-08-subtitle Мы — команда, создающая новый формат курсов
     .block-08-text Мы упаковываем сложный материал в 12-ти часовые интенсивы. Специализируемся на новых профессиях эры цифровизации и искусственного интеллекта.  
-    .block-08-subtitle Наши преподаватели
+    .block-08-techers.block-08-subtitle Наши преподаватели
 
     .block-08-items 
       .block-08-item
@@ -24,14 +24,17 @@
 .container-forma
   form(action="#", method="post").block-08-forma 
     .block-08-forma-title.title Оставьте заявку и мы вам перезвоним
-    input(type="text", name="name2" placeholder="Имя").block-08-forma-name
-    input(type="text", name="phone2" placeholder="Телефон").block-08-forma-phone
-    input(type="button", name="submit" value="Отправить").block-08-forma-btn.btn
-    a(href="#")
-      img(src="../../img/block-08/social1.svg", alt="1") 
-    a(href="#")
-      img(src="../../img/block-08/social2.svg", alt="2") 
-    a(href="#")
-      img(src="../../img/block-08/social3.svg", alt="3")
+
+    .block-08-for
+      input(type="text", name="name2" placeholder="Имя").block-08-forma-name
+      input(type="text", name="phone2" placeholder="Телефон").block-08-forma-phone
+      input(type="button", name="submit" value="Отправить").block-08-forma-btn.btn
+      .block-08-forma-soc
+        a(href="#")
+          img(src="../../img/block-08/social1.svg", alt="1") 
+        a(href="#")
+          img(src="../../img/block-08/social2.svg", alt="2") 
+        a(href="#")
+          img(src="../../img/block-08/social3.svg", alt="3")  
 
 

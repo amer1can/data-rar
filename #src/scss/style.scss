@@ -23,7 +23,10 @@
 // $mobile: 767;
   $desktop: 1400px;
   // $tablet: 1199px;
-  $mobile: 767px;
+  $xl: 1200px;
+  $lg: 992px;
+  $mobile: 768px;
+  $sm: 576px;
 //</ПЕРЕМЕННЫЕ>===================================================
 
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>====================================
@@ -53,23 +56,46 @@ body {
 //</ОБОЛОЧКА>=====================================================
 
 //<ОСНОВНАЯ СЕТКА>================================================
+// xs: 0,
+// sm: 576px,
+// md: 768px,
+// lg: 992px,
+// xl: 1200px,
+// xxl: 1400px
 .container {
 	width: 100%;
 	margin: 0 auto;
   padding: 0px 115px 0px 140px;
-  
-	// @media (max-width: $tablet) {
-	// 	max-width: 100%;
-	// 	padding: 0px;
-  // }
+	@media (max-width: 1200px) {
+		max-width: 100%;
+		padding: 0px 50px;
+  }
   @media (max-width: $mobile) {
 		max-width: 100%;
+		padding: 0px 20px;
+  }
+  @media (max-width: $sm) {
+    max-width: 100%;
 		padding: 0px 15px;
   }
 }
 .container-small {
   max-width: 950px;
   margin: 0px auto;
+
+  @media (max-width: $lg) {
+		max-width: 100%;
+		padding: 0px 20px;
+  }
+
+  @media (max-width: $mobile) {
+		max-width: 100%;
+		padding: 0px 20px;
+    text-align: center;
+  }
+  @media (max-width: $sm) {
+    text-align: center;
+  }
 }
 .container-slider {
   width: 100%;
@@ -77,7 +103,11 @@ body {
   background-image: url('../img/block-03-slider/bg.png');
   background-position: center right;
   background-repeat: no-repeat;
-  height: 570px;
+  height: 573px;
+  @media (max-width: $lg) {
+    padding-top: 110px;
+  }
+
 }
 .container-big {
   margin-top: -200px;
@@ -85,17 +115,26 @@ body {
   height: 2410px;
   background-image: url('../img/block-05/bg.png');
   background-position: center;
+  
 }
 .container-kurs {
   width: 100%;
   height: 1750px;
   background-image: url('../img/block-07/bg.png');
   background-position: center;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
+  @media (max-width: 1040px) {
+    height: 1290px;
+    background-position: top;
+  }
+  @media (max-width: 669px) {
+    height: 1800px;
+  }
 }
 .container-about {
   width: 100%;
   height: 830px;
+  padding: 0px 20px;
   background-image: url('../img/block-08/bg.png');
   background-position: center;
   background-repeat: no-repeat

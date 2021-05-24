@@ -25,4 +25,10 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 .title {
   font-weight: 700;
   font-size: 32px;
+  @media (max-width: $mobile) {
+    font-size: 28px;
+  }
+  @media (max-width: $sm) {
+    text-align: center;
+  }
 }

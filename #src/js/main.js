@@ -1,30 +1,79 @@
 // ********** SWIPER ****************
 // в html добавляем встроенные классы swiper
 // swiper-container, swiper-wrapper, swiper-slide swiper-pagination, swiper-button-prev(next), swiper-scrollbar
-//var mySwiper = new Swiper('.swiper__container', {
-//    // Optional parameters
-//    direction: 'horizontal',
-//    loop: true,
-  //  slidesPerView: 3,
-  //  spaceBetween: 30,
-//    // autoHeight: 'true',
-//  
-//    // If we need pagination
-//    pagination: {
-//      el: '.swiper__pagination',
-//    },
-//  
-//    // Navigation arrows
-//    navigation: {
-//      prevEl: '.swiper__prev',
-//      nextEl: '.swiper__next',
-//    },
-//  
-//    // And if we need scrollbar
-//    // scrollbar: {
-//    //   el: '.swiper-scrollbar',
-//    // },
-//  })
+let slider03 = new Swiper('.block03-slider', {
+   direction: 'horizontal',
+   loop: true,
+   slidesPerView: 6,
+   spaceBetween: 20,
+   pagination: {
+     el: '.block03-slider-dots',
+   },
+   breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    // when window width is >= 640px
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    },
+    1200: {
+      slidesPerView: 6,
+      spaceBetween: 20
+    }
+    },
+ 
+ })
+// ********** END SWIPER ****************
+let slider09 = new Swiper('.block-09-slider', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 20,
+  centeredSlides: true,
+  // centeredSlidesBounds: true,
+  // autoHeight: 'true',
+
+  // If we need pagination
+  pagination: {
+    el: '.block-09-slider-dots',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    530: {
+      slidesPerView: 1.5,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    768: {
+      centeredSlides: false,
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 640px
+    992: {
+      slidesPerView: 2.1,
+      spaceBetween: 40
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    },
+})
 // ********** END SWIPER ****************
 
 //const qs = selector => document.querySelector(selector),
@@ -63,3 +112,4 @@
 //    if (!its_menu && !its_icon && menu_is_active) toggleMenu();
 // })
 //end ******************
+
