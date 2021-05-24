@@ -115,7 +115,9 @@ body {
   height: 2410px;
   background-image: url('../img/block-05/bg.png');
   background-position: center;
-  
+  @media (max-width: $sm) {
+    height: 2260px;
+  }
 }
 .container-kurs {
   width: 100%;
